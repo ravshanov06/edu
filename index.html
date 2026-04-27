@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prepositions of Place - Handout</title>
+    <style>
+        :root {
+            --bg: #f9f7f2;
+            --card: #ffffff;
+            --text: #2c2c2c;
+            --muted: #5e5e5e;
+            --accent: #d97845;
+            --accent-light: #fdf0e8;
+            --border: #e6ddd6;
+            --shadow: 0 2px 12px rgba(0,0,0,0.06);
+            --radius: 12px;
+            --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            font-family: var(--font);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .handout {
+            max-width: 800px;
+            width: 100%;
+            background: var(--card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 2.5rem 2rem;
+            border: 1px solid var(--border);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px dashed var(--border);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            color: var(--accent);
+            letter-spacing: -0.5px;
+            margin-bottom: 0.25rem;
+        }
+        .header .subtitle {
+            font-size: 1rem;
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--accent);
+            margin: 1.8rem 0 0.8rem;
+            padding-left: 0.5rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        h3 {
+            font-size: 1rem;
+            color: #3a3a3a;
+            margin: 1.2rem 0 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.8rem 0 1.2rem;
+            font-size: 0.95rem;
+        }
+
+        thead th {
+            background: var(--accent);
+            color: #fff;
+            padding: 0.6rem 0.8rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        thead th:first-child {
+            border-radius: 8px 0 0 0;
+        }
+        thead th:last-child {
+            border-radius: 0 8px 0 0;
+        }
+
+        tbody td {
+            padding: 0.55rem 0.8rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+        tbody tr:nth-child(even) {
+            background: #fdfaf7;
+        }
+        tbody td:first-child {
+            font-weight: 700;
+            color: var(--accent);
+            white-space: nowrap;
+        }
+
+        .highlight-box {
+            background: var(--accent-light);
+            border: 1px solid #f0d6c0;
+            border-radius: 10px;
+            padding: 1rem 1.2rem;
+            margin: 1rem 0;
+        }
+        .highlight-box p {
+            margin-bottom: 0.4rem;
+        }
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+        .highlight-box strong {
+            color: var(--accent);
+        }
+
+        .summary-box {
+            text-align: center;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 10px;
+            padding: 1rem 1.5rem;
+            margin-top: 2rem;
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .lang-note {
+            font-style: italic;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 0.8rem 0;
+        }
+        @media (max-width: 550px) {
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+            .handout {
+                padding: 1.5rem 1rem;
+            }
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            color: #aaa;
+        }
+
+        /* ============ EXERCISE ONLY SECTION ============ */
+        .exercise-only {
+            max-width: 800px;
+            width: 100%;
+            background: var(--card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            border: 2px solid var(--accent);
+            page-break-before: always;
+        }
+
+        .exercise-only .header {
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .blur-answer {
+            display: inline-block;
+            filter: blur(6px);
+            transition: filter 0.2s ease;
+            cursor: pointer;
+            font-weight: 700;
+            color: var(--accent);
+            background: #f5f0eb;
+            padding: 0.1rem 0.7rem;
+            border-radius: 4px;
+            margin-left: 0.3rem;
+            font-size: 0.9rem;
+            user-select: none;
+            min-width: 2rem;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .blur-answer:hover,
+        .blur-answer:active,
+        .blur-answer.revealed {
+            filter: blur(0);
+            background: #fff;
+            border: 1px dashed var(--accent);
+            color: var(--accent);
+        }
+
+        .instructions-blur {
+            background: #fff8f4;
+            border-left: 4px solid var(--accent);
+            padding: 0.6rem 1rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 1.2rem;
+            font-size: 0.9rem;
+            color: var(--muted);
+            font-style: italic;
+        }
+
+        .section-label {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            margin-bottom: 0.8rem;
+            letter-spacing: 0.5px;
+        }
+
+        .practice {
+            background: #fafaf8;
+            border-radius: 10px;
+            padding: 1.2rem 1.5rem;
+            border: 1px solid var(--border);
+            margin: 1.2rem 0;
+        }
+        .practice ol {
+            padding-left: 1.5rem;
+        }
+        .practice li {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+                gap: 1rem;
+            }
+            .handout,
+            .exercise-only {
+                box-shadow: none;
+                border: none;
+                max-width: 100%;
+                padding: 1rem;
+            }
+            .header h1 {
+                color: #000;
+            }
+            h2 {
+                color: #000;
+                border-left-color: #000;
+            }
+            thead th {
+                background: #ddd;
+                color: #000;
+            }
+            .summary-box {
+                background: #ddd;
+                color: #000;
+            }
+            .highlight-box {
+                background: #f5f5f5;
+                border-color: #ccc;
+            }
+            .blur-answer {
+                filter: blur(6px);
+                -webkit-filter: blur(6px);
+                background: #eee;
+                color: #000;
+                border: 1px dashed #999;
+            }
+            .section-label {
+                background: #ddd;
+                color: #000;
+            }
+            .instructions-blur {
+                background: #f9f9f9;
+                border-left-color: #999;
+            }
+            .exercise-only {
+                border: 1px dashed #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== MAIN HANDOUT ==================== -->
+    <div class="handout">
+
+        <!-- HEADER -->
+        <div class="header">
+            <h1>📍 Prepositions of Place</h1>
+            <p class="subtitle">Joy predloglari — Handout / Tarqatma</p>
+        </div>
+
+        <!-- WHAT ARE THEY? -->
+        <h2>1. What are Prepositions of Place?</h2>
+        <p>Words we use to show the <strong>position</strong> or <strong>location</strong> of something.</p>
+        <p class="lang-note">Gapda joy yoki makonni ko'rsatish uchun ishlatiladigan so'zlar.</p>
+
+        <!-- KEY PREPOSITIONS TABLE -->
+        <h2>2. Key Prepositions | Asosiy predloglar</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Preposition</th>
+                    <th>Meaning</th>
+                    <th>When to use / Qachon ishlatiladi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>in</td>
+                    <td>ichida</td>
+                    <td>inside a closed space / yopiq makon ichida</td>
+                </tr>
+                <tr>
+                    <td>on</td>
+                    <td>ustida, sirtida</td>
+                    <td>on a surface / sirtida</td>
+                </tr>
+                <tr>
+                    <td>under</td>
+                    <td>ostida</td>
+                    <td>directly below / to'g'ridan to'g'ri ostida</td>
+                </tr>
+                <tr>
+                    <td>next to</td>
+                    <td>yonida</td>
+                    <td>beside / biror narsaning yonida</td>
+                </tr>
+                <tr>
+                    <td>between</td>
+                    <td>orasida</td>
+                    <td>in the middle of two things / ikkita narsaning orasida</td>
+                </tr>
+                <tr>
+                    <td>behind</td>
+                    <td>orqasida</td>
+                    <td>at the back of something / orqasida</td>
+                </tr>
+                <tr>
+                    <td>in front of</td>
+                    <td>oldida</td>
+                    <td>at the front of something / oldida</td>
+                </tr>
+                <tr>
+                    <td>above</td>
+                    <td>balandroq</td>
+                    <td>higher, not touching / balandroq, lekin tegmaydi</td>
+                </tr>
+                <tr>
+                    <td>over</td>
+                    <td>ustida (harakat)</td>
+                    <td>above with movement/covering / ustida, ko'pincha harakat bor</td>
+                </tr>
+                <tr>
+                    <td>below</td>
+                    <td>pastda</td>
+                    <td>lower than something / pastda</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- IMPORTANT DIFFERENCES -->
+        <h2>3. Important Differences | Muhim farqlar</h2>
+        <div class="two-col">
+            <div class="highlight-box">
+                <p><strong>ABOVE</strong> vs <strong>OVER</strong></p>
+                <p><strong>Above:</strong> higher, but <em>NOT</em> touching<br><span class="lang-note">balandroq, lekin tegmaydi</span></p>
+                <p><strong>Over:</strong> above, often with movement or covering<br><span class="lang-note">ustida, ko'pincha harakat bilan</span></p>
+                <p style="margin-top:0.4rem;">📌 The clock is <strong>above</strong> the door.</p>
+                <p>📌 The plane flies <strong>over</strong> the city.</p>
+            </div>
+            <div class="highlight-box">
+                <p><strong>BELOW</strong> vs <strong>UNDER</strong></p>
+                <p><strong>Below:</strong> in a lower position<br><span class="lang-note">pastda</span></p>
+                <p><strong>Under:</strong> directly below, covered by something<br><span class="lang-note">to'g'ridan to'g'ri ostida</span></p>
+                <p style="margin-top:0.4rem;">📌 The valley is <strong>below</strong> the mountain.</p>
+                <p>📌 The cat is <strong>under</strong> the table.</p>
+            </div>
+        </div>
+
+        <!-- SENTENCE POSITION -->
+        <h2>4. Where in the sentence? | Gapda qayerda keladi?</h2>
+        <p>Prepositions of place usually come at the <strong>beginning</strong> or <strong>end</strong> of a sentence. They specify the location and can completely change the meaning of the sentence.</p>
+        <p class="lang-note">Odatiy joy gap boshida yoki oxirida. Joy yoki makonni aniqlaydi, gap ma'nosini o'zgartiradi.</p>
+
+        <!-- SUMMARY -->
+        <div class="summary-box">
+            ✅ Bugun biz <strong>prepositions of place</strong> va ularning qanday ishlatilishini o'rgandik.<br>
+            <span style="font-weight:400;font-size:0.95rem;">Today we learned prepositions of place and how to use them.</span>
+        </div>
+
+        <p class="footer-note">ESL Handout — Prepositions of Place</p>
+    </div>
+
+    <!-- ==================== EXERCISE-ONLY SECTION ==================== -->
+    <div class="exercise-only">
+
+        <!-- HEADER -->
+        <div class="header">
+            <span class="section-label">✏️ Worksheet</span>
+            <h1>Prepositions of Place</h1>
+            <p class="subtitle">Exercises | Mashqlar</p>
+        </div>
+
+        <div class="instructions-blur">
+            💡 <strong>Instructions:</strong> Fill in the blanks. Hover over or tap the blurred answers to check your work.<br>
+            <span class="lang-note">Bo'sh joylarni to'ldiring. Javobni ko'rish uchun xira joy ustiga bosing yoki hover qiling.</span>
+        </div>
+
+        <!-- EXERCISE 1: BASIC PREPOSITIONS -->
+        <h2>Exercise 1: Basic Prepositions of Place</h2>
+        <p><strong>Fill in the blanks with: in, on, under, next to, between, behind, in front of.</strong></p>
+        <p class="lang-note">Bo'sh joylarni to'ldiring.</p>
+        <div class="practice">
+            <ol>
+                <li>The book is ___ the table. <span class="blur-answer" title="Hover to reveal">on</span></li>
+                <li>The cat is ___ the box. <span class="blur-answer" title="Hover to reveal">in</span></li>
+                <li>The shoes are ___ the bed. <span class="blur-answer" title="Hover to reveal">under</span></li>
+                <li>The picture is ___ the wall. <span class="blur-answer" title="Hover to reveal">on</span></li>
+                <li>The lamp is ___ the sofa and the bookshelf. <span class="blur-answer" title="Hover to reveal">between</span></li>
+                <li>The dog is hiding ___ the house. <span class="blur-answer" title="Hover to reveal">behind</span></li>
+                <li>The car is parked ___ the school. <span class="blur-answer" title="Hover to reveal">in front of</span></li>
+                <li>She sits ___ me in class. <span class="blur-answer" title="Hover to reveal">next to</span></li>
+                <li>The keys are ___ my bag. <span class="blur-answer" title="Hover to reveal">in</span></li>
+                <li>There is a lamp ___ the desk. <span class="blur-answer" title="Hover to reveal">on</span></li>
+            </ol>
+        </div>
+
+        <!-- EXERCISE 2: ABOVE vs OVER -->
+        <h2>Exercise 2: Above vs Over</h2>
+        <p><strong>Choose the correct preposition: above or over.</strong></p>
+        <p class="lang-note">To'g'ri predlogni tanlang.</p>
+        <div class="practice">
+            <ol>
+                <li>The clock is hanging ___ the door. <span class="blur-answer" title="Hover to reveal">above</span></li>
+                <li>The plane flew ___ the mountains. <span class="blur-answer" title="Hover to reveal">over</span></li>
+                <li>There is a painting ___ the fireplace. <span class="blur-answer" title="Hover to reveal">above</span></li>
+                <li>The children jumped ___ the puddle. <span class="blur-answer" title="Hover to reveal">over</span></li>
+                <li>The stars are ___ us. <span class="blur-answer" title="Hover to reveal">above</span></li>
+            </ol>
+        </div>
+
+        <!-- EXERCISE 3: BELOW vs UNDER -->
+        <h2>Exercise 3: Below vs Under</h2>
+        <p><strong>Choose the correct preposition: below or under.</strong></p>
+        <p class="lang-note">To'g'ri predlogni tanlang.</p>
+        <div class="practice">
+            <ol>
+                <li>The temperature dropped ___ zero last night. <span class="blur-answer" title="Hover to reveal">below</span></li>
+                <li>The cat is hiding ___ the bed. <span class="blur-answer" title="Hover to reveal">under</span></li>
+                <li>The ball rolled ___ the chair. <span class="blur-answer" title="Hover to reveal">under</span></li>
+                <li>The village is located ___ sea level. <span class="blur-answer" title="Hover to reveal">below</span></li>
+                <li>She put the box ___ the table. <span class="blur-answer" title="Hover to reveal">under</span></li>
+            </ol>
+        </div>
+
+        <!-- EXERCISE 4: MIXED REVIEW -->
+        <h2>Exercise 4: Mixed Review</h2>
+        <p><strong>Fill in the blanks with any correct preposition of place.</strong></p>
+        <p class="lang-note">Istalgan to'g'ri joy predlogi bilan to'ldiring.</p>
+        <div class="practice">
+            <ol>
+                <li>The supermarket is ___ the bank. <span class="blur-answer" title="Hover to reveal">next to</span></li>
+                <li>I am standing ___ the bus stop. <span class="blur-answer" title="Hover to reveal">in front of</span></li>
+                <li>There is a park ___ my house and the school. <span class="blur-answer" title="Hover to reveal">between</span></li>
+                <li>The dog is sleeping ___ the warm blanket. <span class="blur-answer" title="Hover to reveal">under</span></li>
+                <li>Please put the plates ___ the table. <span class="blur-answer" title="Hover to reveal">on</span></li>
+                <li>There is someone ___ the door. <span class="blur-answer" title="Hover to reveal">behind</span></li>
+            </ol>
+        </div>
+
+        <!-- EXERCISE 5: TRANSLATE -->
+        <h2>Exercise 5: Translate into English</h2>
+        <p><strong>Translate the following sentences using prepositions of place.</strong></p>
+        <p class="lang-note">Quyidagi gaplarni ingliz tiliga tarjima qiling.</p>
+        <div class="practice">
+            <ol>
+                <li>Mushuk qutining ichida.
+                    <span class="blur-answer" title="Hover to reveal">The cat is in the box.</span>
+                </li>
+                <li>Kitob stolning ustida.
+                    <span class="blur-answer" title="Hover to reveal">The book is on the table.</span>
+                </li>
+                <li>Poyafzallar karavotning ostida.
+                    <span class="blur-answer" title="Hover to reveal">The shoes are under the bed.</span>
+                </li>
+                <li>Maktab bankning yonida.
+                    <span class="blur-answer" title="Hover to reveal">The school is next to the bank.</span>
+                </li>
+                <li>Bog' ikkita binoning orasida.
+                    <span class="blur-answer" title="Hover to reveal">The garden is between two buildings.</span>
+                </li>
+            </ol>
+        </div>
+
+        <p class="footer-note">ESL Worksheet — Prepositions of Place</p>
+    </div>
+
+</body>
+</html>
