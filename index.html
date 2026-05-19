@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prepositions of Place - Handout</title>
+    <title>Ultimate Grammar & Vocabulary Teacher-Student Guide | Full Test Preparation</title>
     <style>
         :root {
-            --bg: #f9f7f2;
+            --primary: #1a1a2e;
+            --secondary: #16213e;
+            --accent: #e94560;
+            --gold: #f5c518;
+            --light: #f0f0f0;
             --card: #ffffff;
-            --text: #2c2c2c;
-            --muted: #5e5e5e;
-            --accent: #d97845;
-            --accent-light: #fdf0e8;
-            --border: #e6ddd6;
-            --shadow: 0 2px 12px rgba(0,0,0,0.06);
-            --radius: 12px;
-            --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            --text: #1f1f1f;
+            --border: #dcdcdc;
         }
 
         * {
@@ -25,507 +23,418 @@
         }
 
         body {
-            background: var(--bg);
-            font-family: var(--font);
+            background: linear-gradient(145deg, #f4f6f9 0%, #e9edf2 100%);
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
             color: var(--text);
-            line-height: 1.7;
-            padding: 2rem 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 2rem;
+            line-height: 1.6;
+            padding: 1.5rem;
         }
 
-        .handout {
-            max-width: 800px;
-            width: 100%;
-            background: var(--card);
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            padding: 2.5rem 2rem;
-            border: 1px solid var(--border);
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.7);
+            backdrop-filter: blur(15px);
+            border-radius: 3rem;
+            box-shadow: 0 30px 70px rgba(0,0,0,0.1);
+            padding: 2rem 2.5rem;
         }
 
-        .header {
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #e94560, #0f3460);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             text-align: center;
-            margin-bottom: 2rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 2px dashed var(--border);
-        }
-
-        .header h1 {
-            font-size: 2rem;
-            color: var(--accent);
+            margin-bottom: 0.5rem;
             letter-spacing: -0.5px;
-            margin-bottom: 0.25rem;
         }
-        .header .subtitle {
-            font-size: 1rem;
-            color: var(--muted);
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #4a4a6a;
+            margin-bottom: 2.5rem;
             font-weight: 500;
+            border-bottom: 2px dashed #c0c0d0;
+            padding-bottom: 1.2rem;
         }
 
-        h2 {
-            font-size: 1.25rem;
-            color: var(--accent);
-            margin: 1.8rem 0 0.8rem;
-            padding-left: 0.5rem;
-            border-left: 4px solid var(--accent);
+        .test-overview {
+            background: #0f3460;
+            color: white;
+            border-radius: 2rem;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 20px 30px rgba(15, 52, 96, 0.25);
         }
 
-        h3 {
-            font-size: 1rem;
-            color: #3a3a3a;
-            margin: 1.2rem 0 0.5rem;
+        .test-overview span {
+            background: var(--accent);
+            padding: 0.4rem 1.2rem;
+            border-radius: 3rem;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 2.5rem 0 1.2rem 0;
+            border-left: 10px solid var(--accent);
+            padding-left: 1.5rem;
+            color: #0f3460;
+            background: linear-gradient(to right, #f8f9fc, transparent);
+        }
+
+        .grammar-card {
+            background: var(--card);
+            border-radius: 2rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+            transition: transform 0.2s;
+            border: 1px solid #eee;
+        }
+
+        .grammar-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.12);
+        }
+
+        .grammar-card h3 {
+            font-size: 1.9rem;
+            color: #e94560;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .grammar-card h4 {
+            font-size: 1.3rem;
+            color: #16213e;
+            margin: 1.2rem 0 0.6rem;
+        }
+
+        .example-box {
+            background: #f1f5f9;
+            padding: 1.2rem;
+            border-radius: 1rem;
+            margin: 0.8rem 0;
+            font-style: italic;
+            border-left: 6px solid var(--accent);
+        }
+
+        .teacher-note {
+            background: #fff7e0;
+            border: 1px solid #f5c518;
+            border-radius: 1.2rem;
+            padding: 1rem 1.5rem;
+            margin: 1.2rem 0;
+            font-weight: 500;
+            color: #5e4a00;
+            position: relative;
+        }
+
+        .teacher-note::before {
+            content: "🧑‍🏫 TEACHER TIP";
+            font-weight: 800;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 0.3rem;
+            color: #b08a00;
+        }
+
+        .grid-2col {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 1.2rem 0;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 0.8rem 0 1.2rem;
-            font-size: 0.95rem;
-        }
-
-        thead th {
-            background: var(--accent);
-            color: #fff;
-            padding: 0.6rem 0.8rem;
-            text-align: left;
-            font-weight: 600;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        thead th:first-child {
-            border-radius: 8px 0 0 0;
-        }
-        thead th:last-child {
-            border-radius: 0 8px 0 0;
-        }
-
-        tbody td {
-            padding: 0.55rem 0.8rem;
-            border-bottom: 1px solid var(--border);
-            vertical-align: top;
-        }
-        tbody tr:last-child td {
-            border-bottom: none;
-        }
-        tbody tr:nth-child(even) {
-            background: #fdfaf7;
-        }
-        tbody td:first-child {
-            font-weight: 700;
-            color: var(--accent);
-            white-space: nowrap;
-        }
-
-        .highlight-box {
-            background: var(--accent-light);
-            border: 1px solid #f0d6c0;
-            border-radius: 10px;
-            padding: 1rem 1.2rem;
             margin: 1rem 0;
-        }
-        .highlight-box p {
-            margin-bottom: 0.4rem;
-        }
-        .highlight-box p:last-child {
-            margin-bottom: 0;
-        }
-        .highlight-box strong {
-            color: var(--accent);
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
 
-        .summary-box {
-            text-align: center;
-            background: var(--accent);
-            color: #fff;
-            border-radius: 10px;
-            padding: 1rem 1.5rem;
-            margin-top: 2rem;
-            font-weight: 600;
-            font-size: 1.05rem;
+        th {
+            background: #0f3460;
+            color: white;
+            padding: 0.8rem;
+            text-align: left;
         }
 
-        .lang-note {
-            font-style: italic;
-            color: var(--muted);
-            font-size: 0.9rem;
+        td, th {
+            padding: 0.7rem 1rem;
+            border-bottom: 1px solid #ddd;
         }
 
-        .two-col {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+        .badge {
+            background: #16213e;
+            color: white;
+            border-radius: 2rem;
+            padding: 0.2rem 1rem;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+
+        .synonym-list {
+            display: flex;
+            flex-wrap: wrap;
             gap: 1rem;
-            margin: 0.8rem 0;
-        }
-        @media (max-width: 550px) {
-            .two-col {
-                grid-template-columns: 1fr;
-            }
-            .handout {
-                padding: 1.5rem 1rem;
-            }
+            list-style: none;
+            font-weight: 600;
         }
 
-        .footer-note {
-            text-align: center;
-            margin-top: 1.5rem;
-            font-size: 0.85rem;
-            color: #aaa;
+        .synonym-list li {
+            background: #e6edf6;
+            padding: 0.5rem 1.2rem;
+            border-radius: 2rem;
         }
 
-        /* ============ EXERCISE ONLY SECTION ============ */
-        .exercise-only {
-            max-width: 800px;
-            width: 100%;
-            background: var(--card);
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            padding: 2rem;
-            border: 2px solid var(--accent);
-            page-break-before: always;
+        hr {
+            margin: 2rem 0;
+            border: 1px solid #ddd;
         }
 
-        .exercise-only .header {
-            border-bottom: 2px solid var(--accent);
-        }
-
-        .blur-answer {
-            display: inline-block;
-            filter: blur(6px);
-            transition: filter 0.2s ease;
-            cursor: pointer;
-            font-weight: 700;
-            color: var(--accent);
-            background: #f5f0eb;
-            padding: 0.1rem 0.7rem;
-            border-radius: 4px;
-            margin-left: 0.3rem;
-            font-size: 0.9rem;
-            user-select: none;
-            min-width: 2rem;
-            text-align: center;
-            vertical-align: middle;
-        }
-        .blur-answer:hover,
-        .blur-answer:active,
-        .blur-answer.revealed {
-            filter: blur(0);
-            background: #fff;
-            border: 1px dashed var(--accent);
-            color: var(--accent);
-        }
-
-        .instructions-blur {
-            background: #fff8f4;
-            border-left: 4px solid var(--accent);
-            padding: 0.6rem 1rem;
-            border-radius: 0 8px 8px 0;
-            margin-bottom: 1.2rem;
-            font-size: 0.9rem;
-            color: var(--muted);
-            font-style: italic;
-        }
-
-        .section-label {
-            display: inline-block;
-            background: var(--accent);
-            color: #fff;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding: 0.2rem 0.8rem;
-            border-radius: 20px;
-            margin-bottom: 0.8rem;
-            letter-spacing: 0.5px;
-        }
-
-        .practice {
-            background: #fafaf8;
-            border-radius: 10px;
-            padding: 1.2rem 1.5rem;
-            border: 1px solid var(--border);
-            margin: 1.2rem 0;
-        }
-        .practice ol {
-            padding-left: 1.5rem;
-        }
-        .practice li {
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-        }
-
-        @media print {
-            body {
-                background: #fff;
-                padding: 0;
-                gap: 1rem;
+        @media (max-width: 700px) {
+            .container {
+                padding: 1.2rem;
             }
-            .handout,
-            .exercise-only {
-                box-shadow: none;
-                border: none;
-                max-width: 100%;
-                padding: 1rem;
-            }
-            .header h1 {
-                color: #000;
-            }
-            h2 {
-                color: #000;
-                border-left-color: #000;
-            }
-            thead th {
-                background: #ddd;
-                color: #000;
-            }
-            .summary-box {
-                background: #ddd;
-                color: #000;
-            }
-            .highlight-box {
-                background: #f5f5f5;
-                border-color: #ccc;
-            }
-            .blur-answer {
-                filter: blur(6px);
-                -webkit-filter: blur(6px);
-                background: #eee;
-                color: #000;
-                border: 1px dashed #999;
-            }
-            .section-label {
-                background: #ddd;
-                color: #000;
-            }
-            .instructions-blur {
-                background: #f9f9f9;
-                border-left-color: #999;
-            }
-            .exercise-only {
-                border: 1px dashed #ccc;
+            h1 {
+                font-size: 2.2rem;
             }
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>📘 GRAMMAR MASTERCLASS</h1>
+        <div class="subtitle">Everything you need for the test — explained clearly for teachers & students</div>
 
-    <!-- ==================== MAIN HANDOUT ==================== -->
-    <div class="handout">
-
-        <!-- HEADER -->
-        <div class="header">
-            <h1>📍 Prepositions of Place</h1>
-            <p class="subtitle">Joy predloglari — Handout / Tarqatma</p>
+        <!-- TEST OVERVIEW -->
+        <div class="test-overview">
+            <div><strong>📋 STRUCTURE:</strong> 100 points total</div>
+            <span>Sec 1: Correct mistakes (10)</span>
+            <span>Sec 2: Translation (20)</span>
+            <span>Stative Verbs (10)</span>
+            <span>Relative Clauses (10)</span>
+            <span>Synonyms (5)</span>
+            <span>Vocab underline (5)</span>
         </div>
 
-        <!-- WHAT ARE THEY? -->
-        <h2>1. What are Prepositions of Place?</h2>
-        <p>Words we use to show the <strong>position</strong> or <strong>location</strong> of something.</p>
-        <p class="lang-note">Gapda joy yoki makonni ko'rsatish uchun ishlatiladigan so'zlar.</p>
-
-        <!-- KEY PREPOSITIONS TABLE -->
-        <h2>2. Key Prepositions | Asosiy predloglar</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Preposition</th>
-                    <th>Meaning</th>
-                    <th>When to use / Qachon ishlatiladi</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>in</td>
-                    <td>ichida</td>
-                    <td>inside a closed space / yopiq makon ichida</td>
-                </tr>
-                <tr>
-                    <td>on</td>
-                    <td>ustida, sirtida</td>
-                    <td>on a surface / sirtida</td>
-                </tr>
-                <tr>
-                    <td>under</td>
-                    <td>ostida</td>
-                    <td>directly below / to'g'ridan to'g'ri ostida</td>
-                </tr>
-                <tr>
-                    <td>next to</td>
-                    <td>yonida</td>
-                    <td>beside / biror narsaning yonida</td>
-                </tr>
-                <tr>
-                    <td>between</td>
-                    <td>orasida</td>
-                    <td>in the middle of two things / ikkita narsaning orasida</td>
-                </tr>
-                <tr>
-                    <td>behind</td>
-                    <td>orqasida</td>
-                    <td>at the back of something / orqasida</td>
-                </tr>
-                <tr>
-                    <td>in front of</td>
-                    <td>oldida</td>
-                    <td>at the front of something / oldida</td>
-                </tr>
-                <tr>
-                    <td>above</td>
-                    <td>balandroq</td>
-                    <td>higher, not touching / balandroq, lekin tegmaydi</td>
-                </tr>
-                <tr>
-                    <td>over</td>
-                    <td>ustida (harakat)</td>
-                    <td>above with movement/covering / ustida, ko'pincha harakat bor</td>
-                </tr>
-                <tr>
-                    <td>below</td>
-                    <td>pastda</td>
-                    <td>lower than something / pastda</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <!-- IMPORTANT DIFFERENCES -->
-        <h2>3. Important Differences | Muhim farqlar</h2>
-        <div class="two-col">
-            <div class="highlight-box">
-                <p><strong>ABOVE</strong> vs <strong>OVER</strong></p>
-                <p><strong>Above:</strong> higher, but <em>NOT</em> touching<br><span class="lang-note">balandroq, lekin tegmaydi</span></p>
-                <p><strong>Over:</strong> above, often with movement or covering<br><span class="lang-note">ustida, ko'pincha harakat bilan</span></p>
-                <p style="margin-top:0.4rem;">📌 The clock is <strong>above</strong> the door.</p>
-                <p>📌 The plane flies <strong>over</strong> the city.</p>
+        <!-- ============ PAST PERFECT ============ -->
+        <div class="grammar-card">
+            <h3>⏳ 1. Past Perfect (Simple & Continuous)</h3>
+            <p><strong>When to use:</strong> An action that happened <em>before</em> another action in the past.</p>
+            <div class="grid-2col">
+                <div>
+                    <h4>Past Perfect Simple</h4>
+                    <p><strong>Form:</strong> had + past participle (V3)</p>
+                    <div class="example-box">
+                        ✅ She <strong>had finished</strong> her homework before dinner.<br>
+                        ❌ She finished her homework before dinner had finished.
+                    </div>
+                </div>
+                <div>
+                    <h4>Past Perfect Continuous</h4>
+                    <p><strong>Form:</strong> had been + verb-ing</p>
+                    <div class="example-box">
+                        ✅ They <strong>had been waiting</strong> for an hour when the bus arrived.<br>
+                        ❌ They waited for an hour when the bus had arrived.
+                    </div>
+                </div>
             </div>
-            <div class="highlight-box">
-                <p><strong>BELOW</strong> vs <strong>UNDER</strong></p>
-                <p><strong>Below:</strong> in a lower position<br><span class="lang-note">pastda</span></p>
-                <p><strong>Under:</strong> directly below, covered by something<br><span class="lang-note">to'g'ridan to'g'ri ostida</span></p>
-                <p style="margin-top:0.4rem;">📌 The valley is <strong>below</strong> the mountain.</p>
-                <p>📌 The cat is <strong>under</strong> the table.</p>
+            <div class="teacher-note">
+                Students often forget that Past Perfect needs another past event. Use timeline drawings. Common mistake: using Past Perfect without a second past reference.
             </div>
         </div>
 
-        <!-- SENTENCE POSITION -->
-        <h2>4. Where in the sentence? | Gapda qayerda keladi?</h2>
-        <p>Prepositions of place usually come at the <strong>beginning</strong> or <strong>end</strong> of a sentence. They specify the location and can completely change the meaning of the sentence.</p>
-        <p class="lang-note">Odatiy joy gap boshida yoki oxirida. Joy yoki makonni aniqlaydi, gap ma'nosini o'zgartiradi.</p>
-
-        <!-- SUMMARY -->
-        <div class="summary-box">
-            ✅ Bugun biz <strong>prepositions of place</strong> va ularning qanday ishlatilishini o'rgandik.<br>
-            <span style="font-weight:400;font-size:0.95rem;">Today we learned prepositions of place and how to use them.</span>
+        <!-- HAVE SOMETHING DONE -->
+        <div class="grammar-card">
+            <h3>🔧 2. Have Something Done (Causative)</h3>
+            <p><strong>Meaning:</strong> You arrange for someone else to do something for you.</p>
+            <p><strong>Structure:</strong> have/has/had + object + past participle (V3)</p>
+            <div class="example-box">
+                ✅ I <strong>had my hair cut</strong> yesterday. (Someone cut it for me)<br>
+                ✅ She <strong>is having her car repaired</strong> now.<br>
+                ❌ I had cut my hair. (That means you did it yourself!)
+            </div>
+            <div class="teacher-note">
+                Emphasize the difference: "I painted my house" (I did it) vs "I had my house painted" (someone else did it). Perfect for translation tasks.
+            </div>
         </div>
 
-        <p class="footer-note">ESL Handout — Prepositions of Place</p>
+        <!-- DETERMINERS -->
+        <div class="grammar-card">
+            <h3>⚖️ 3. Determiners: both / either / neither</h3>
+            <table>
+                <tr><th>Determiner</th><th>Meaning</th><th>Example</th></tr>
+                <tr><td><strong>Both</strong></td><td>two things together</td><td>Both students passed the test.</td></tr>
+                <tr><td><strong>Either</strong></td><td>one or the other (2 options)</td><td>You can choose either book.</td></tr>
+                <tr><td><strong>Neither</strong></td><td>not one and not the other</td><td>Neither answer is correct.</td></tr>
+            </table>
+            <div class="example-box">
+                ✅ Both of them are tired.<br>
+                ✅ Neither of us wants to fail.<br>
+                ❌ Either of the three options. (use "any" for more than two)
+            </div>
+            <div class="teacher-note">
+                "Neither" is already negative, so avoid double negatives. "Both...and", "either...or", "neither...nor" are common patterns.
+            </div>
+        </div>
+
+        <!-- MODAL PERFECT -->
+        <div class="grammar-card">
+            <h3>🔮 4. Modal Perfect (must/can’t/may + have + V3)</h3>
+            <p><strong>Used for deductions/speculations about the past.</strong></p>
+            <div class="grid-2col">
+                <div>
+                    <h4>must have + V3</h4>
+                    <p>Strong certainty something happened.</p>
+                    <div class="example-box">✅ She <strong>must have left</strong> early. (I'm sure she left)</div>
+                </div>
+                <div>
+                    <h4>can't have + V3</h4>
+                    <p>Strong certainty something didn't happen.</p>
+                    <div class="example-box">✅ He <strong>can't have forgotten</strong> the test! (impossible)</div>
+                </div>
+                <div>
+                    <h4>may/might have + V3</h4>
+                    <p>Possibility in the past.</p>
+                    <div class="example-box">✅ They <strong>may have missed</strong> the bus.</div>
+                </div>
+            </div>
+            <div class="teacher-note">
+                These are for past deduction, not obligation. Contrast: "You must go" (obligation now) vs "You must have gone" (past certainty).
+            </div>
+        </div>
+
+        <!-- ORDER OF ADJECTIVES -->
+        <div class="grammar-card">
+            <h3>🎨 5. Order of Adjectives</h3>
+            <p>The natural English order: <strong>Opinion → Size → Age → Shape → Colour → Origin → Material → Purpose</strong></p>
+            <div class="example-box">
+                ✅ A <strong>beautiful small old round blue Italian ceramic</strong> plate.<br>
+                ❌ A blue Italian old small ceramic beautiful plate. (sounds weird)
+            </div>
+            <div class="teacher-note">
+                Mnemonic: <strong>OSASCOMP</strong> (Opinion, Size, Age, Shape, Colour, Origin, Material, Purpose). Practice with noun phrases.
+            </div>
+        </div>
+
+        <!-- NON-CONTINUOUS VERBS -->
+        <div class="grammar-card">
+            <h3>🚫 6. Non-continuous (Stative) Verbs</h3>
+            <p>Verbs that describe states, not actions. Usually NOT used in continuous tenses.</p>
+            <div class="grid-2col">
+                <div>
+                    <strong>Categories:</strong>
+                    <ul>
+                        <li>Mental states: know, believe, understand</li>
+                        <li>Emotions: love, hate, prefer</li>
+                        <li>Senses: see, hear, smell</li>
+                        <li>Possession: have, own, belong</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="example-box">
+                        ✅ I <strong>know</strong> the answer.<br>
+                        ❌ I am knowing the answer.<br>
+                        ✅ She <strong>wants</strong> some water.<br>
+                        ❌ She is wanting water.
+                    </div>
+                </div>
+            </div>
+            <div class="teacher-note">
+                Some verbs can be both stative and dynamic (e.g., "think" - I think it's good vs I'm thinking about it). Highlight these.
+            </div>
+        </div>
+
+        <!-- RELATIVE CLAUSES -->
+        <div class="grammar-card">
+            <h3>🔗 7. Relative Clauses (Noun / Adjective / Adverb clauses)</h3>
+            <p><strong>Adjective clause</strong> describes a noun. <strong>Noun clause</strong> acts as subject/object. Often tested together.</p>
+            <h4>Adjective (Relative) Clauses</h4>
+            <div class="example-box">
+                ✅ The student <strong>who studies hard</strong> will pass.<br>
+                ✅ The book <strong>that you gave me</strong> is great.
+            </div>
+            <h4>Noun Clauses</h4>
+            <div class="example-box">
+                ✅ <strong>What she said</strong> surprised me. (subject)<br>
+                ✅ I don't know <strong>where he went</strong>. (object)
+            </div>
+            <div class="teacher-note">
+                Common test trap: mixing "what" and "that". "I know that you are tired" vs "I know what you mean". Practice recognition.
+            </div>
+        </div>
+
+        <!-- SYNONYMS & VOCAB -->
+        <div class="grammar-card">
+            <h3>📚 Vocabulary Section (Synonyms & Premium Words)</h3>
+            <h4>3.1 Synonyms (exactly as test format)</h4>
+            <ul class="synonym-list">
+                <li>Improve → <strong>enhance, develop</strong></li>
+                <li>Difficult → <strong>challenging, tough</strong></li>
+                <li>Important → <strong>significant, crucial</strong></li>
+                <li>Fast → <strong>quick, rapid</strong></li>
+                <li>Choose → <strong>select, pick</strong></li>
+            </ul>
+            <h4 style="margin-top:1.5rem;">3.2 Underline Words (from premium book)</h4>
+            <p>Since premium book isn't specified, here are advanced words often tested:</p>
+            <div class="example-box">
+                <strong>Underline correct:</strong> <br>
+                The scientist made a <u>breakthrough</u> / breakout in research.<br>
+                She has a remarkable <u>capacity</u> / capability for languages.<br>
+                We must <u>tackle</u> / tickle the problem immediately.
+            </div>
+            <div class="teacher-note">
+                For premium vocab, create a list of 30-40 words from the specific book and drill recognition. I can generate a custom list if you share the book name.
+            </div>
+        </div>
+
+        <!-- MISTAKE CORRECTION STRATEGY -->
+        <div class="grammar-card" style="background:#fff5f5;">
+            <h3>✍️ Section 1 Strategy: Correct the Mistake</h3>
+            <p>Common mistakes aligned with topics:</p>
+            <div class="example-box">
+                ❌ I am knowing her since 2019. → ✅ I have known her since 2019. (stative verb)<br>
+                ❌ She had went to school. → ✅ She had gone to school. (past perfect)<br>
+                ❌ I had my car repair. → ✅ I had my car repaired. (causative)<br>
+                ❌ Both student didn't come. → ✅ Neither student came. (determiner)<br>
+                ❌ He must left early. → ✅ He must have left early. (modal perfect)
+            </div>
+        </div>
+
+        <!-- TRANSLATION APPROACH -->
+        <div class="grammar-card">
+            <h3>🌍 Section 2.1 Translation Tips (Uzbek → English)</h3>
+            <p>Focus on structure transfer. Example with topics:</p>
+            <div class="example-box">
+                <strong>Uzbek:</strong> Men soatimni tuzatdirdim.<br>
+                <strong>English:</strong> I had my watch repaired. (Have something done)<br><br>
+                <strong>Uzbek:</strong> U kelganida biz allaqachon ovqatlangan edik.<br>
+                <strong>English:</strong> When he arrived, we had already eaten. (Past Perfect)
+            </div>
+        </div>
+
+        <hr>
+        <p style="text-align:center; font-weight:700; color:#e94560;">🎯 Total grammar prep: 60 points + vocabulary foundation. Combine with listening/reading practice.</p>
+        <p style="text-align:center; margin-top:1rem;">🧠 <strong>Teaching approach:</strong> Explain rule → show examples → do error correction → translation drill.</p>
     </div>
-
-    <!-- ==================== EXERCISE-ONLY SECTION ==================== -->
-    <div class="exercise-only">
-
-        <!-- HEADER -->
-        <div class="header">
-            <span class="section-label">✏️ Worksheet</span>
-            <h1>Prepositions of Place</h1>
-            <p class="subtitle">Exercises | Mashqlar</p>
-        </div>
-
-        <div class="instructions-blur">
-            💡 <strong>Instructions:</strong> Fill in the blanks. Hover over or tap the blurred answers to check your work.<br>
-            <span class="lang-note">Bo'sh joylarni to'ldiring. Javobni ko'rish uchun xira joy ustiga bosing yoki hover qiling.</span>
-        </div>
-
-        <!-- EXERCISE 1: BASIC PREPOSITIONS -->
-        <h2>Exercise 1: Basic Prepositions of Place</h2>
-        <p><strong>Fill in the blanks with: in, on, under, next to, between, behind, in front of.</strong></p>
-        <p class="lang-note">Bo'sh joylarni to'ldiring.</p>
-        <div class="practice">
-            <ol>
-                <li>The book is ___ the table. <span class="blur-answer" title="Hover to reveal">on</span></li>
-                <li>The cat is ___ the box. <span class="blur-answer" title="Hover to reveal">in</span></li>
-                <li>The shoes are ___ the bed. <span class="blur-answer" title="Hover to reveal">under</span></li>
-                <li>The picture is ___ the wall. <span class="blur-answer" title="Hover to reveal">on</span></li>
-                <li>The lamp is ___ the sofa and the bookshelf. <span class="blur-answer" title="Hover to reveal">between</span></li>
-                <li>The dog is hiding ___ the house. <span class="blur-answer" title="Hover to reveal">behind</span></li>
-                <li>The car is parked ___ the school. <span class="blur-answer" title="Hover to reveal">in front of</span></li>
-                <li>She sits ___ me in class. <span class="blur-answer" title="Hover to reveal">next to</span></li>
-                <li>The keys are ___ my bag. <span class="blur-answer" title="Hover to reveal">in</span></li>
-                <li>There is a lamp ___ the desk. <span class="blur-answer" title="Hover to reveal">on</span></li>
-            </ol>
-        </div>
-
-        <!-- EXERCISE 2: ABOVE vs OVER -->
-        <h2>Exercise 2: Above vs Over</h2>
-        <p><strong>Choose the correct preposition: above or over.</strong></p>
-        <p class="lang-note">To'g'ri predlogni tanlang.</p>
-        <div class="practice">
-            <ol>
-                <li>The clock is hanging ___ the door. <span class="blur-answer" title="Hover to reveal">above</span></li>
-                <li>The plane flew ___ the mountains. <span class="blur-answer" title="Hover to reveal">over</span></li>
-                <li>There is a painting ___ the fireplace. <span class="blur-answer" title="Hover to reveal">above</span></li>
-                <li>The children jumped ___ the puddle. <span class="blur-answer" title="Hover to reveal">over</span></li>
-                <li>The stars are ___ us. <span class="blur-answer" title="Hover to reveal">above</span></li>
-            </ol>
-        </div>
-
-        <!-- EXERCISE 3: BELOW vs UNDER -->
-        <h2>Exercise 3: Below vs Under</h2>
-        <p><strong>Choose the correct preposition: below or under.</strong></p>
-        <p class="lang-note">To'g'ri predlogni tanlang.</p>
-        <div class="practice">
-            <ol>
-                <li>The temperature dropped ___ zero last night. <span class="blur-answer" title="Hover to reveal">below</span></li>
-                <li>The cat is hiding ___ the bed. <span class="blur-answer" title="Hover to reveal">under</span></li>
-                <li>The ball rolled ___ the chair. <span class="blur-answer" title="Hover to reveal">under</span></li>
-                <li>The village is located ___ sea level. <span class="blur-answer" title="Hover to reveal">below</span></li>
-                <li>She put the box ___ the table. <span class="blur-answer" title="Hover to reveal">under</span></li>
-            </ol>
-        </div>
-
-        <!-- EXERCISE 4: MIXED REVIEW -->
-        <h2>Exercise 4: Mixed Review</h2>
-        <p><strong>Fill in the blanks with any correct preposition of place.</strong></p>
-        <p class="lang-note">Istalgan to'g'ri joy predlogi bilan to'ldiring.</p>
-        <div class="practice">
-            <ol>
-                <li>The supermarket is ___ the bank. <span class="blur-answer" title="Hover to reveal">next to</span></li>
-                <li>I am standing ___ the bus stop. <span class="blur-answer" title="Hover to reveal">in front of</span></li>
-                <li>There is a park ___ my house and the school. <span class="blur-answer" title="Hover to reveal">between</span></li>
-                <li>The dog is sleeping ___ the warm blanket. <span class="blur-answer" title="Hover to reveal">under</span></li>
-                <li>Please put the plates ___ the table. <span class="blur-answer" title="Hover to reveal">on</span></li>
-                <li>There is someone ___ the door. <span class="blur-answer" title="Hover to reveal">behind</span></li>
-            </ol>
-        </div>
-
-        <!-- EXERCISE 5: TRANSLATE -->
-        <h2>Exercise 5: Translate into English</h2>
-        <p><strong>Translate the following sentences using prepositions of place.</strong></p>
-        <p class="lang-note">Quyidagi gaplarni ingliz tiliga tarjima qiling.</p>
-        <div class="practice">
-            <ol>
-                <li>Mushuk qutining ichida.
-                    <span class="blur-answer" title="Hover to reveal">The cat is in the box.</span>
-                </li>
-                <li>Kitob stolning ustida.
-                    <span class="blur-answer" title="Hover to reveal">The book is on the table.</span>
-                </li>
-                <li>Poyafzallar karavotning ostida.
-                    <span class="blur-answer" title="Hover to reveal">The shoes are under the bed.</span>
-                </li>
-                <li>Maktab bankning yonida.
-                    <span class="blur-answer" title="Hover to reveal">The school is next to the bank.</span>
-                </li>
-                <li>Bog' ikkita binoning orasida.
-                    <span class="blur-answer" title="Hover to reveal">The garden is between two buildings.</span>
-                </li>
-            </ol>
-        </div>
-
-        <p class="footer-note">ESL Worksheet — Prepositions of Place</p>
-    </div>
-
 </body>
 </html>
